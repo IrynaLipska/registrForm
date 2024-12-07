@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW7(forms)</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container flex-block">
+      <form method="GET" class="form">
+        <h2>Registration form</h2>
+        <div>
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            placeholder="Your full name is..."
+            id="name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            required
+          />
+        </div>
+        <div>
+          <label for="password">Your password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="password"
+            required
+          />
+        </div>
+        <div>
+          <label for="confirmPassword">Re-enter your password</label>
+          <input
+            type="password"
+            placeholder="Confirm your password"
+            id="confirmPassword"
+            required
+          />
+          <div>
+            <!-- <h3>Gender</h3> -->
+            <legend>Select your gender</legend>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="Men" class="radio" />
+              Men
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="Women" class="radio" />
+              Women
+            </label>
+          </div>
+          <div>
+            <label for="number">Age</label>
+            <input
+              type="number"
+              placeholder="0...99"
+              id="nummber"
+              required
+              min="0"
+              max="99"
+            />
+          </div>
+          <div>
+            <label for="course">Your course</label>
+            <select name="course" id="course" class="select">
+              <option value="" class=cd"select_item" disabled selected>
+                Choose a course</option>
+              <option value="fro">Front-end</option>
+              <option value="des">Design</option>
+              <option value="pyt">Pyton basic</option>
+            </select>
+          </div>
+          <label for="address">Your address</label>
+          <textarea
+            name="address"
+            id="address"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <!-- <input type="color" /> -->
+        <div>
+          <label class="text_small">
+            <input
+              type="checkbox"
+              name="processing"
+              value="agree"
+              class="checkbox"
+              required
+            />
+            Agreement to data processing
+          </label>
+          <!-- <legend>I agree to the processing of personal data</legend> -->
+        </div>
+        <div class="buttons">
+          <button type="reset" class="buttons__btn">Reset</button
+          ><button type="submit" class="buttons__btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
